@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Roboto:wght@700&display=swap');
+
+
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+}
+
+h2,
+p {
+    font-family: "Fira Sans", sans-serif;
+    color: #ffffff;
+}
+
+.button {
+    appearance: none;
+    border: 1px solid #e83f57;
+    background-color: #e83f57;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-right: auto;
+}
+
+/* Header */
+.header {
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-content: space-between;
+    gap: 10px;
+    /*padding: 1rem;*/
+    background-color: #3DE07E;
+    max-height: 600px;
+}
+
+.icon {
+    /* grid-area: icon; */
+    grid-column: 1 / -1;
+}
+
+.headline {
+    /* grid-area: headline; */
+    grid-column: 1 / -1;
+    margin-top: auto;
+    font-size: 6.25rem;
+    text-align: center;
+}
+
+.ninja {
+    /* grid-area: ninja; */
+    margin-top: auto;
+    grid-column: 6 / 8;
+    align-self: center;
+    max-width: 100%;
+}
+
+/* Main */
+
+main {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    background: black;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 1rem;
+    margin: 4rem 10rem;
+    padding: 2rem;
+    /*  grid-template-rows: auto auto;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "footer footer footer";  */
+}
+
+.card {
+    margin-bottom: 4rem;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    line-height: 140%;
+    max-width: 100%;
+ }
+
+.wrapperBig {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 4rem 10rem;
+    padding: 2rem;
+}
+
+.bigCard {
+    background-color: white;
+}
+
+.wrapperBig img {
+    max-width: 100%;
+}
+
+.bigCard section {
+    padding: 1rem;
+}
+
+.bigCard h2 {
+    color: #000000;
+}
+
+.bigCard p {
+    color: #000;
+
+}
+
+.bigCard section button {
+    padding: 1rem 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer {
+    max-width: 100vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin: 0 12rem;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav .link {
+    color: #ffffff;
+    text-decoration: none;
+    text-size-adjust: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer .media .logos {
+    display: flex;
+}
+
+footer .media .logos img {
+    margin-right: 1rem;
+}
